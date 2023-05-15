@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Chess.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">unittest</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">Chess.java</span></div><h1>Chess.java</h1><pre class="source lang-java linenums">package org.example;
+
+import java.util.ArrayList;
+import java.util.List;
+
+<span class="nc" id="L6">public  class Chess {</span>
+    public static String solve(int kingX, int kingY, int rook1X, int rook1Y, int rook2X, int rook2Y, int rook3X, int rook3Y){
+
+<span class="fc" id="L9">        String result = &quot;&quot;;</span>
+
+<span class="pc bpc" id="L11" title="2 of 4 branches missed.">        if (rook1X == kingX || rook1Y == kingY) {</span>
+<span class="nc" id="L12">            result += 1;</span>
+        }
+
+<span class="pc bpc" id="L15" title="1 of 4 branches missed.">        if (rook2X == kingX || rook2Y == kingY) {</span>
+<span class="fc" id="L16">            result += &quot; &quot; +  2;</span>
+        }
+
+<span class="pc bpc" id="L19" title="1 of 4 branches missed.">        if (rook3X == kingX || rook3Y == kingY) {</span>
+<span class="fc" id="L20">            result += &quot; &quot; + 3;</span>
+        }
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        if (result.length() != 0) {</span>
+<span class="fc" id="L23">         return result.strip();</span>
+        }
+<span class="fc" id="L25">        return &quot;0&quot;;</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
